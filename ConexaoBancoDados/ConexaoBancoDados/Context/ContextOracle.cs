@@ -14,7 +14,7 @@ namespace ConexaoBancoDados.Context
         // Criar conexao com banco de dados 
         private OracleConnection criarConexao()
         {
-            string strConexao = "User ID=vagnergs;Password=191122;Data Source=(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 12.0.12.111)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = orcl)));Pooling=true;Connection Lifetime=300;Max Pool Size=20;";
+            string strConexao = "User ID=USUATIO_ORACLE;Password=SENHA_ORACLE;Data Source=(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = SERVIDOR_ORACLE )(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = BASE_DADOS)));Pooling=true;Connection Lifetime=300;Max Pool Size=20;";
             return new OracleConnection(strConexao);
         }
 
